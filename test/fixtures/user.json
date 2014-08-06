@@ -1,20 +1,12 @@
 [
   {
+    "id" : 1,
     "name" : "Fred",
-    "pets" :
-    [
-      {
-        "name" : "Dino"
-      }
-    ]
+    "pets" : [1]
   },
   {
+    "id" : 2,
     "name" : "Wilma",
-    "pets" :
-    [
-      {
-        "name" : "Dino"
-      }
-    ]
+    "pets" : [1]
   }
 ]

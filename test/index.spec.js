@@ -28,7 +28,9 @@ var fixtures;
 
 before(function (done) {
 
-  fs.unlinkSync('.tmp/localDiskDb.db');
+  try {
+    fs.unlinkSync('.tmp/localDiskDb.db');
+  } catch (err) {}
 
   Sails().lift({
     log: {

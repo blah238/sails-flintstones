@@ -1,14 +1,7 @@
 [
   {
+    "id" : 1,
     "name": "Dino",
-    "owners":
-    [
-      {
-        "name": "Fred"
-      },
-      {
-        "name": "Wilma"
-      }
-    ]
+    "owners": [1, 2]
   }
 ]
