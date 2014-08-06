@@ -4,10 +4,6 @@ module.exports = {
       type: 'string',
       required: true,
       unique: true
-    },
-    pets: {
-      collection: 'pet',
-      via: 'owners'
     }
   }
 };

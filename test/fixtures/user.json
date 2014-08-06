@@ -1,20 +1,8 @@
 [
   {
-    "name" : "Fred",
-    "pets" :
-    [
-      {
-        "name" : "Dino"
-      }
-    ]
+    "name" : "Fred"
   },
   {
-    "name" : "Wilma",
-    "pets" :
-    [
-      {
-        "name" : "Dino"
-      }
-    ]
+    "name" : "Wilma"
   }
 ]
