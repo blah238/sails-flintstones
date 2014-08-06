@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Dino",
+    "owners":
+    [
+      {
+        "name": "Fred"
+      },
+      {
+        "name": "Wilma"
+      }
+    ]
+  }
+]

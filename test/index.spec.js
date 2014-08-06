@@ -1,5 +1,7 @@
 var fs = require('fs');
 
+var barrels = require('barrels');
+
 var Sails = require('sails/lib/app');
 
 ///* Make stack traces shorter and more relevant
@@ -21,6 +23,8 @@ var Sails = require('sails/lib/app');
 //global.oldError = console.oldError;
 
 var sailsprocess;
+
+var fixtures;
 
 before(function (done) {
 
@@ -46,7 +50,19 @@ before(function (done) {
       return done(err);
     }
     sailsprocess = sails;
-    done(null, sails);
+
+    // Load fixtures
+    barrels.populate(function(err) {
+      if (err) {
+        sails.log.error(err);
+        return done(err);
+      }
+      done(err, sails);
+    });
+    // Save original objects in `fixtures` variable
+    fixtures = barrels.objects;
+
+//    done(null, sails);
   });
 });
 

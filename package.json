@@ -35,6 +35,7 @@
   "author": "anonymous node/sails user",
   "license": "",
   "devDependencies": {
+    "barrels": "0.0.5",
     "chai": "^1.9.1",
     "sails-memory": "^0.10.1"
   }
